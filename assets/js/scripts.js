@@ -1,9 +1,19 @@
 
 function changeMode(){
-    console.log('clicou')
+    changeClasses();
+}
+
+function changeClasses(){
+    btn.classList.toggle('dark-mode');
+    h1.classList.toggle('dark-mode');
+    body.classList.toggle('dark-mode');
+    footer.classList.toggle('dark-mode');
 }
 
 const btn = document.getElementById('mode-selector');
+const h1 = document.getElementById('page-title');
+const body = document.getElementsByTagName('body')[0]; //Estou pegando pela própria tag no caso body
+const footer = document.getElementsByTagName('footer')[0];
 
 /**@param btn  selection element to checking */
 console.log(btn); 
@@ -12,3 +22,5 @@ console.log(btn);
 btn.addEventListener('click', changeMode)
 
 // document.addEventListener('click', changeMode)             (test event)
+
+
