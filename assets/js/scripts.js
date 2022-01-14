@@ -10,3 +10,5 @@ console.log(btn);
 
 /**@param changeMode funcao declarada acima e quando é clicado no butão automaticamente é chamado o evento click */
 btn.addEventListener('click', changeMode)
+
+// document.addEventListener('click', changeMode)             (test event)
